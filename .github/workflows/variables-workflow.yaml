@@ -5,7 +5,7 @@ on: [push]
 
 env:
   owner_name: Abhi
-  my_action_var: ${{vars.connstr}}
+  my_action_var: ${{vars.CONNSTR}}
 
 jobs:
   use_env_var:
