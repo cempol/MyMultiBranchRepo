@@ -6,7 +6,7 @@ on: [push]
 env:
   owner_name: Abhi
   my_action_var: ${{vars.CONNSTR}}
-  my_secret: ${{secrets.MY_SECRET}}
+  my_secret: ${{ secrets.MY_SECRET }}
 
 jobs:
   use_env_var:
