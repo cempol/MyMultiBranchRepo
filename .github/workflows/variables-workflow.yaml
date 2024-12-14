@@ -6,9 +6,10 @@ on: [push]
 env:
   owner_name: Abhi
   my_action_var: ${{vars.CONNSTR}}
+  my_secret: ${{secrets.MY_SECRET}}
 
 jobs:
   use_env_var:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Job use_env_var is executing as part of new workflow - from $owner_name  for action var value $my_action_var"
+      - run: echo "Job use_env_var is executing as part of new workflow - from $owner_name  for action var value $my_action_var  secret $my_secret"
